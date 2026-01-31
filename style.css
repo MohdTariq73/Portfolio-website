@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display:flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to right,rgb(30, 30, 78),rgb(90, 21, 103));
+    color: white;
+    padding: 13px 0;
+}
+.logo{
+    font-size: 22px;
+    font-weight: bolder;
+     font-family: "Playwrite AU QLD", cursive;
+
+}
+nav ul{
+    display: flex;
+    gap: 17px;
+    align-items: center;
+}
+nav ul li{
+    list-style-type:none;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    
+}
+nav ul li a:hover{
+    color: plum;
+    transition: all 0.5s;
+}
+.hero{
+    background-image: linear-gradient(to right,rgb(193,234,234),rgb(176,185,231));
+    height: 65vh;
+    display: flex;
+    justify-content:center;
+    gap: 130px;
+    align-items:center;
+
+}
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.hero-left .one{
+    font-size: 50px;
+    color: rgb(33,2,76);
+    font-weight: bolder
+}
+.two{
+    font-size: 26px;
+}
+.bold{
+    font-weight: bold;
+}
+img{
+    border-radius: 50%;
+}
+.btn1{
+    background-image: linear-gradient(to right,rgb(66, 66, 135),rgb(152, 205, 210));
+    color: white;
+    padding: 7px 9px;
+    border: 2px solid purple;
+    border-radius: 9px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: all 0.5s;
+    
+
+}
+.btn1:hover{
+    background-image: none;
+    background-color: rgb(120, 62, 120);
+}
+.button-container{
+    padding: 9px 0;
+}
+.project{
+        display: flex;
+        align-items: center;
+        padding: 22px 100px;
+        border-top: 2px solid rgb(136 165 246/25%);
+        background-image: linear-gradient(to right, rgb(110, 109, 109),rgb(115, 174, 174));
+        
+    }
+    .project-image img{
+        width: 55vh;
+        padding: 10px;
+        border-radius: 424px;
+    }
+    .project-info{
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        
+    }
+    .project-info .text{
+        font-size: 26px;
+        font-weight: bold;
+        padding: 10px 0;
+
+    }
+    .project-info p{
+        padding: 12px 0;
+    }
+    .row-reverse{
+        flex-direction: row-reverse;
+    }
+    footer{
+        background-color: rgb(20, 1, 20);
+        padding: 24px;
+        color: white;
+        text-align: center;
+
+    }
+    @media screen and (max-width: 950px) {
+        nav{
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            
+        }
+        .hero{
+                flex-direction: column-reverse;
+    justify-content: flex-start;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    gap: 12px;
+        }
+        .hero-left{
+                justify-content: center;
+    align-items: center;
+        }
+    }
+    @media screen and (max-width: 650px){
+        .hero-left .one{
+                font-size: 40px;
+        text-align: center;
+        
+        }
+        
+        
+        .hero-left .two{
+            font-size: 30px;
+
+        }
+        .project{
+            
+            flex-direction: column;
+            
+        }
+        .project-image img{
+            width: 300px;
+        }
+        .project-info{
+            padding: 15px 23px;
+        }
+    }
+
